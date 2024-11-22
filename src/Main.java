@@ -21,3 +21,11 @@ public class Main {
 
         scanner.close();
     }
+
+    public static String[] filterStringsByLength(String[] array, int maxLength) {
+        int count = 0;
+        for (String s : array) {
+            if (s.length() <= maxLength) {
+                count++;
+            }
+        }
