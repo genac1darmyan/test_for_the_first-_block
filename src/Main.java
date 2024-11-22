@@ -29,3 +29,16 @@ public class Main {
                 count++;
             }
         }
+
+        String[] result = new String[count];
+        int index = 0;
+
+        for (String s : array) {
+            if (s.length() <= maxLength) {
+                result[index] = s;
+                index++;
+            }
+        }
+
+        return result;
+    }
