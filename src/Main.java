@@ -14,3 +14,10 @@ public class Main {
         for (int i = 0; i < n; i++) {
             inputArray[i] = scanner.nextLine();
         }
+
+        String[] resultArray = filterStringsByLength(inputArray, 3);
+        System.out.println("Результат:");
+        printArray(resultArray);
+
+        scanner.close();
+    }
